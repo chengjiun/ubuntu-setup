@@ -15,6 +15,7 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 sudo apt install libjpeg9 libcap-dev libopenblas-dev libnuma-dev autoconf build-essential ca-certificates libgoogle-glog-dev libhiredis-dev libiomp-dev libleveldb-dev liblmdb-dev libopencv-dev libpthread-stubs0-dev libsnappy-dev libprotobuf-dev protobuf-compiler libomp-dev -y
 sudo apt-get install psensor psensor-server -y
 sudo apt-get install p7zip zip unzip unrar -y
+sudo apt install filezilla -y
 sudo apt-get install silversearcher-ag tree -y
 sudo apt install libncurses5-dev libncursesw5-dev -y
 # nfs remote mounting
@@ -50,13 +51,6 @@ sudo apt-get install fftw3 libgmp-dev libmpfr-dev libfftw3-dev libgmp10 -y
 #curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 #sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
 #sudo systemctl restart docker
-
-#bazel  (needed to compile tensorflow) -- check bazel version number
-sudo apt-get install g++ unzip zip openjdk-11-jdk -y
-curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
-echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
-sudo apt-get update && sudo apt-get install bazel-1.1.0 -y
-sudo ln -s /usr/bin/bazel-1.1.0 /usr/bin/bazel
 
 # install vs code
 sudo snap install --classic code
